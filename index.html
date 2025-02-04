@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <title>Dhruv Wadhwa's Portfolio</title> 
+    <meta name="author" content="Dhruv">
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio of my skills, experiences">
+    <meta name="robots" content="index, follow">
+    <link rel="preload" href="face.jpg" as="image">
+    <style>
+      body {
+          border: 5px solid black;
+      }
+    </style>
+
+    <style>
+      my-header {
+          display: block;
+          background-color: #4CAE52;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          font-size: 24px;
+          font-family: 'Arial', sans-serif;
+      }
+    </style>
+  </head>
+
+
+<body>
+    <my-header>
+        Welcome to My Website
+    </my-header>
+
+    <dialog open>
+      <p> In this portfolio, I have included some information about me, my skills, my projects, and my experiences.</p>
+        <form method="dialog"> 
+          <button>OK</button>
+        </form>
+    </dialog>
+
+    <iframe src="header.html" width="600" height="215" ></iframe>
+
+  <main>
+    <div id="home">
+        <figure>
+          <picture>
+            <img src="face.jpg" alt="Face picture" width="250" height="400">
+          </picture>
+          <figcaption><em>Computer Science enthusiast with a focus on Software Development and Artifical Intelligence</em></figcaption>
+        </figure>
+        
+      </div>
+  </main>
+
+  <hello-world></hello-world>
+
+  <!-- Used chatgpt to generate this code -->
+  <script>
+      class HelloWorld extends HTMLElement {
+          constructor() {
+              super(); 
+          }
+
+          connectedCallback() {
+              console.log("Hello World!");
+          }
+      }
+      customElements.define('hello-world', HelloWorld);
+  </script>
+
+<iframe src="footer.html" width="1000" height="400"></iframe>
+</body>
+</html>
