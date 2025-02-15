@@ -4,14 +4,23 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px 20px;
-    background-color: black;
-    color: yellow;
-    width: 50%;
-  }
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  padding: 0px 0px;
+  background-color: black;
+  color: yellow;
+}
+
+/* header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: yellow;
+  width: 50%;
+} */
 
 
 #myCanvas {
@@ -129,7 +138,8 @@
     border: 1px solid yellow;
     border-radius: 8px;
     text-align: left;
-    width: 100%
+    width: 100%;          
+    box-sizing: border-box; 
   }
 
   h2 {
@@ -155,6 +165,7 @@
 
 
 @media (min-width: 1150px) {
+
   body {
     display: flex;
     flex-direction: row; 
@@ -177,9 +188,28 @@
     width: 1420px; 
     height: 500px;
   }
+
+  .header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    padding: 0px 0px;
+    background-color: black;
+    color: yellow;
+  }
+
+  /* header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: yellow;
+    width: 50%;
+  } */
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1149px) {
   * {
     box-sizing: border-box;
   }
@@ -219,6 +249,15 @@
     width: 100%;
     height: 500px;
     border: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    padding: 0px 0px;
+    background-color: black;
+    color: yellow;
   }
 
 }
@@ -423,4 +462,30 @@ video {
   height: auto;           
   max-width: 100%;         
   box-sizing: border-box;  
+}
+
+
+@media (max-width: 1150px) {
+  #certificate_fig {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .skill_image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 1150px) {
+  .headshot_image{
+    width: 65dvh;
+    height: auto; 
+    object-fit: cover;
+    opacity: 0;  
+    transform: scale(0.5); 
+    animation: fadeInScale 2s ease-out forwards;
+  }
 }
