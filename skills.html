@@ -4,20 +4,19 @@
     <title>Dhruv Wadhwa's Portfolio</title> 
     <meta name="author" content="Dhruv">
     <meta charset="UTF-8">
-    <style>
-      body {
-          border: 5px solid black;
-      }
-  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="certificate.png" as="image">
   </head>
 
 
 <body>
-  <iframe src="header.html" width="600" height="215" ></iframe>
+  <iframe class="header_frame" src="header.html" width="1420" height="110" scrolling="no"></iframe>
 
   <main>
     <section id="skills"
-        <div class="Technical skills">
+        <div class="Technical_skills">
         <hgroup>
         <h2>Skills Section</h2>
         <h3>Technical Skills</h3>
@@ -40,7 +39,7 @@
             <td>Advanced</td>
             </tr>
             <tr>
-            <td>Python <cite><a href="https://www.coursera.org/account/accomplishments/certificate/ZX9WF6BRYPEE" target="_blank" title="View Python Course Certificate">Python Course Certificate</a></cite></td>
+            <td>Python</td>
             <td>Advanced</td>
             </tr>
             <tr>
@@ -52,10 +51,10 @@
             <td>Advanced</td>
             </tr>
             <td>HTML</td>
-            <td><del>Basic</del><ins>Intermediate</ins></td>
+            <td>Intermediate</td>
             </tr>
             <td>CSS</td>
-            <td>Basic</td>
+            <td><del>Basic</del><ins>Intermediate</ins></td>
             </tr>
             <td>Javascript</td>
             <td>Intermediate</td>
@@ -75,7 +74,7 @@
           </tr>
         </template>
 
-        <div class="Soft skills">
+        <div class="Soft_skills">
         <h3>Soft Skills</h3>
         <ul>
         <li>Communication</li>
@@ -86,8 +85,22 @@
         </ul>
         </div>
     </section>
+
+    <figure id="certificate_fig">
+      <picture>
+        <source srcset="certificate.png 1200w" media="(min-width: 1200px) and (max-width: 1499px)" type="image/png">
+      
+        <source srcset="certificate.png 800w" media="(max-width: 1199px)" type="image/png">
+
+        <source srcset="certificate.png 1500w" media="(min-width: 1500px)" type="image/png">
+      
+        <img src="certificate.png" alt="Python Certificate" class="skill_image" loading="lazy">
+
+      </picture>
+      <figcaption><em>Python Course Certificate</em></figcaption>
+    </figure>
   </main>
 
-  <iframe src="footer.html" width="1000" height="400"></iframe>
+  <iframe class="footer_frame" src="footer.html" width="1420" height="500" scrolling="no"></iframe>
 </body>
 </html>

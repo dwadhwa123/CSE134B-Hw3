@@ -1,0 +1,426 @@
+/* Styling for the header */
+.header{
+  background-color: lightblue;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: yellow;
+    width: 50%;
+  }
+
+
+#myCanvas {
+  display: block;
+  width: 500px;
+  height: 34px;
+}
+
+
+#link-section {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+/* Style for the navigation links nested */
+#navigation_links {
+
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: flex-start;
+
+  li {
+    margin-left: 20px;
+  }
+
+  li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  li a:hover {
+    color: #ff6347;
+    transform: scale(1.2);
+  }
+
+  li a:active {
+    color: blue;
+    transform: scale(1.2);
+  }
+}
+
+
+/*Used for both footer and header*/
+  search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  #search-query {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+  fieldset {
+    width: 100%;      
+    padding: 10px;     
+    margin: 0;         
+    box-sizing: border-box; 
+  }
+
+  fieldset {
+    border: 2px solid #4CAF50;
+    background-color: #f9f9f9; 
+  } */
+
+  form:has(input[type="search"]:focus) button {
+    background-color: #4CAF50;             
+  }
+
+  
+/* Styling for the footer */
+
+.footer {
+  background-color: lightgrey;
+
+  legend{
+    color: red
+  }
+
+  form {
+    max-width: 550px;
+    margin: 5px 20px;
+    padding: 20px;
+    background-color: lightcyan;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    text-align: left;
+    width: 100%
+  }
+
+  h2 {
+    text-align: left;
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  aside{
+    margin: 5px 20px;
+  }
+
+  #message{
+    max-width: 500px;
+    max-height: 40px;
+  }
+}
+
+.programming-skill{
+  color: red
+} 
+
+
+@media (min-width: 1150px) {
+  body {
+    display: flex;
+    flex-direction: row; 
+    min-height: 100vh;
+    flex-wrap: wrap;
+  }
+  
+  main {
+    flex: 1; 
+    padding: 20px;
+    display: flex;
+  }
+  
+  .header_frame iframe {
+    width: 1420px; 
+    height: 200px;
+  }
+
+  .footer_frame iframe {
+    width: 1420px; 
+    height: 500px;
+  }
+}
+
+@media (max-width: 1150px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+  }
+
+  body {
+    flex-direction: column;
+    display: flex;
+  }
+
+  main {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; 
+  }
+
+  .header_frame iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+  }
+
+  .footer_frame {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer_frame iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+
+}
+
+
+aside a {
+  color: purple;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline; 
+}
+
+/* For the index.html class */
+
+.headshot_image{
+  width: 25dvw;
+  height: auto; 
+  object-fit: cover;
+  opacity: 0;  
+  transform: scale(0.5); 
+  animation: fadeInScale 2s ease-out forwards;
+}
+
+.skill_image{
+  width: 50dvw;
+  height: 50dvh;
+  height: auto; 
+  object-fit: cover;
+}
+
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+
+
+
+/* Styling for the FAQ section */
+#faq {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: color(display-p3 0.8 0.8 0.8);;
+  border-radius: 8px; 
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  details {
+    margin-bottom: 15px;
+    background-color: color(display-p3 0.95 0.95 0.95);
+    border-radius: 5px;
+    padding: 10px;
+
+    p {
+      color: black;
+      font-size: 1em;
+      margin-top: 0;
+      padding-left: 10px;
+    }
+  }
+  summary {
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    color: purple;
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: color 0.3s;
+  }
+  summary:hover {
+    color: green; 
+  }
+}
+
+
+:root {
+  --primary-color: green; /* Black for primary text or links */
+  --font-size: 16px; /* Default font size */
+}
+
+h2{
+  color: var(--primary-color);
+}
+
+p{
+  font-size: var(--font-size);
+}
+
+
+
+
+
+/* Skills Section*/
+.Technical_skills {
+  margin: 20px;
+  padding: 20px;
+  background-color: lightyellow;
+  border-radius: 8px;
+
+  hgroup {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+    color: black;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    font-weight: normal;
+  }
+
+  h3{
+    text-align: center;
+  }
+}
+
+/* Styling for the table */
+#skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+  caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: brown;
+  }
+
+  th {
+    padding: 12px;
+    text-align: left;
+    background-color: color-mix(in display-p3, blue 40%, white 60%);
+    color: white; 
+    font-weight: bold;
+  }
+
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+    background-color: white; 
+  }
+}
+
+/*Extra style choices*/
+cite {
+  color: #007BFF;
+}
+
+cite a {
+  text-decoration: none;
+}
+
+cite a:hover {
+  text-decoration: underline; 
+}
+
+del {
+  color: #f44336; 
+}
+
+ins {
+  color: #4CAF50;
+}
+
+abbr{
+  font-style: italic;
+  text-decoration: none;
+}
+
+pre {
+  width: 100%;       
+  overflow-x: auto; 
+  white-space: pre-wrap; 
+  padding: 10px;   
+  box-sizing: border-box;
+}
+
+video {
+  width: 50%;            
+  height: auto;           
+  max-width: 100%;         
+  box-sizing: border-box;  
+}
