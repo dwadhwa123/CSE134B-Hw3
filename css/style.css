@@ -443,32 +443,26 @@ video {
 
 @media (max-width: 500px) {
   .headshot_image{
-    width: 100dvw;
+    width: 100vw;
   }
 }
 
 @media (max-width: 700px) {
   .headshot_image{
-    width: 80dvw;
+    width: 80vw;
   }
 }
 
 
 @media (max-width: 1150px) {
   .headshot_image{
-    width: 65dvw;
+    width: 65vw;
   }
 }
 
-@media (max-width: 1500px) {
+@media (min-width: 1150px) {
   .headshot_image{
-    width: 50dvw;
-  }
-}
-
-@media (min-width: 1500px) {
-  .headshot_image{
-    width: 50dvw;
+    width: 50vw;
   }
 }
 
