@@ -265,7 +265,7 @@ aside a:hover {
 
 /* Styling for the FAQ section */
 #faq {
-  max-width: 800px;
+  width: 50%;
   margin: 0 auto;
   padding: 20px;
   background-color: color(display-p3 0.8 0.8 0.8);;
