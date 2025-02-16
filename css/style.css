@@ -466,6 +466,12 @@ video {
   }
 }
 
+@media (min-width: 1500px) {
+  .headshot_image{
+    width: 50dvw;
+  }
+}
+
 .programming-skill{
   color: red
 } 
