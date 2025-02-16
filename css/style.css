@@ -79,20 +79,15 @@
     font-size: 16px;
     background-color: #007BFF;
     color: white;
-    border: none;
-    border-radius: 4px;
+    border: 1px solid transparent;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
   }
   
   button:hover {
     background-color: #0056b3;
   }
   
-  button:focus {
-    outline: none;
-  }
 
   fieldset {
     width: 100%;      
@@ -104,10 +99,14 @@
   fieldset {
     border: 2px solid #4CAF50;
     background-color: #f9f9f9; 
-  } */
+  } 
 
-  form:has(input[type="search"]:focus) button {
-    background-color: #4CAF50;             
+  form:has(textarea:focus) button {
+    border-color: red;
+  }
+
+  search form:has(input:focus) button {
+    border-color: red; 
   }
 
   
@@ -146,6 +145,10 @@
   #message{
     max-width: 500px;
     max-height: 40px;
+  }
+
+  fieldset{
+    color:black
   }
 }
 
