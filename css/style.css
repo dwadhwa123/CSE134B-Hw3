@@ -40,6 +40,7 @@
 
 
   list-style-type: none;
+  margin: 0;
   padding: 0;
   margin: 0px 0px 0px 0px;
   display: flex;
@@ -68,21 +69,7 @@
 }
 
 
-/*Used for both footer and header*/
-  search form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  #search-query {
-    padding: 8px;
-    font-size: 16px;
-    margin-right: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
+/*Used for both footer form*/
   
   button {
     padding: 8px 15px;
@@ -158,10 +145,6 @@
     max-height: 40px;
   }
 }
-
-.programming-skill{
-  color: red
-} 
 
 
 @media (min-width: 1150px) {
@@ -476,6 +459,10 @@ video {
     width: 100%;
     height: auto;
   }
+  
+  video{
+    width: 100%;
+  }
 }
 
 
@@ -489,3 +476,7 @@ video {
     animation: fadeInScale 2s ease-out forwards;
   }
 }
+
+.programming-skill{
+  color: red
+} 
