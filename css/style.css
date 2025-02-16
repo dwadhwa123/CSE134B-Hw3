@@ -31,7 +31,7 @@
 
   list-style-type: none;
   padding: 0;
-  margin-left: calc(100vw - 500px);
+  margin-left: calc(100vw - 380px);
   display: flex;
   justify-content: flex-start;
 
@@ -58,10 +58,10 @@
 }
 
 #search-section{
-  margin-left: calc(100vw - 415px);
+  margin-left: calc(100vw - 295px);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 380px) {
   #search-section{
     margin-left: 85px;
   }
@@ -471,7 +471,6 @@ video {
 .programming-skill{
   color: red
 } 
-
 
 
 .footer_frame iframe {
