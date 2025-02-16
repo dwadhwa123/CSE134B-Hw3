@@ -178,15 +178,6 @@
     color: yellow;
   }
 
-  /* header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px 20px;
-    background-color: black;
-    color: yellow;
-    width: 50%;
-  } */
 }
 
 @media (max-width: 1149px) {
@@ -236,7 +227,7 @@ aside a:hover {
 /* For the index.html class */
 
 .headshot_image{
-  width: 25dvw;
+  width: 500px;
   height: auto; 
   object-fit: cover;
   opacity: 0;  
@@ -436,6 +427,8 @@ video {
   .skill_image {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    object-fit: cover;
   }
   
   video{
@@ -446,26 +439,25 @@ video {
 
 @media (max-width: 500px) {
   .headshot_image{
-    width: 100dvh;
+    width: 100%;
   }
 }
 
-@media (max-width: 700px) {
+@media (min-width: 501px) and (max-width: 800px) {
   .headshot_image{
-    width: 80dvw;
+    width: 80%;
   }
 }
 
-
-@media (max-width: 1150px) {
+@media (min-width: 801px) and (max-width: 1150px) {
   .headshot_image{
-    width: 65dvw;
+    width: 50%;
   }
 }
 
 @media (min-width: 1150px) {
   .headshot_image{
-    width: 50dvw;
+    width: 35%;
   }
   #faq{
     width: 75%;
