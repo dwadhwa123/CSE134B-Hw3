@@ -24,15 +24,18 @@
               In order to quickly update the results based on the decisions made by the players, I stored the decisions in <dfn><span class="programming-skill">MongoDB</span></dfn>, which is a database that can store data in a document oriented format and used listeners to see when they were changed. 
               Using these listners, I could instantaneously update the UI. The reason I used MongoDB is because the information sent between users is fixed into a few decisions so there was no need to overcomplicate it by doing a client-server application.
           </dd>
+          <br>
           <dt>Pantry Pal</dt>
             <dd><strong>Summary:</strong> I worked with a group of 6 people to create a recipe generating and storing application. We used the <span class="programming-skill">Whisper API</span> to take in speech input of ingredients, then using those ingredients
               generating a recipe with a <span class="programming-skill">Chatgpt API</span>. Along with the recipe, we used the <span class="programming-skill">Dalle API</span> to generate images. Same as the game I created, we also used JavaFX for the UI. Finally, we also used a MongoDB server in order to save information from accounts so that you can log into an account from any device. 
               Working on this project helped improve my communication and teamwork as it forced me to compromise and make decisions that everyone could get behind.
             </dd>
+          <br>
           <dt>TFIDF Vectorizer to predict MBTI type</dt>
             <dd><strong>Summary:</strong> I created a <span class="programming-skill">TDIDF Vectorizer</span> with the purpose of taking in strings 
               representing the post history of the user and using that to predict the <abbr title="Myers Brigss Type Indicator">MBTI</abbr> of that user. I used supervised learning to train the model as the code shows below. 
             </dd>
+            <br>
           <pre>
             tfidf_vectorizer = TfidfVectorizer(stop_words='english', max_features=5000)
 

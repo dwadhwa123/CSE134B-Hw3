@@ -481,3 +481,8 @@ video {
   height: 500px;
   border: none;
 }
+
+dt{
+  font-size: 25;
+  font-weight: bold;
+}
