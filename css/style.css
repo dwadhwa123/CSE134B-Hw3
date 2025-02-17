@@ -278,16 +278,18 @@ aside a:hover {
 
 
 :root {
-  --primary-color: green; /* Black for primary text or links */
-  --font-size: 16px; /* Default font size */
+  --primary-color: green;
+  --font-size: 15px;
+  --font-family: 'monospace', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 h2{
-  color: var(--primary-color);
+  color: var(--primary-color, blue);
 }
 
 p{
-  font-size: var(--font-size);
+  font-size: var(--font-size, 14px);
+  font-family: var(--font-family)
 }
 
 

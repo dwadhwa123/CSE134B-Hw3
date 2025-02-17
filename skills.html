@@ -98,11 +98,15 @@
 
     <figure id="certificate_fig">
       <picture>
-        <source srcset="media/certificate.jpg" media="(min-width: 1150px)" type="image/png">
+        <source srcset="media/certificate_large.jpg" media="(min-width: 1500px)" type="image/png">
       
-        <source srcset="media/certificate.jpg" media="(max-width: 1150px)" type="image/png">
+        <source srcset="media/certificate.jpg" media="(min-width: 1200px) and (max-width: 1500px)" type="image/png">
+
+        <source srcset="media/certificate_medium.jpg" media="(min-width: 800px) and (max-width: 1199px)" type="image/png">
+
+        <source srcset="media/certificate_small.jpg" media="(max-width: 800px)" type="image/png">
       
-        <img src="media/certificate_600.jpg" alt="Python Certificate" class="skill_image" loading="lazy">
+        <img src="media/certificate.jpg" alt="Python Certificate" class="skill_image" loading="lazy">
         
       </picture>
       <figcaption><em>Python Course Certificate</em></figcaption>
