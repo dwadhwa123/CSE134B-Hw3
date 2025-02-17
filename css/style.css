@@ -36,7 +36,14 @@
   justify-content: flex-start;
 
   li {
-    margin-left: 20px;
+    @media (max-width: 380px) {
+      margin-left: 17px;
+    }
+
+    @media (min-width: 380px) {
+      margin-left: 20px;
+    }
+
   }
 
   li a {
@@ -192,7 +199,6 @@
     width: 100%;
     box-sizing: border-box; 
   }
-
 }
 
 
@@ -463,13 +469,13 @@ video {
   }
 
   .skill_image{
-    width: 43dvw;
+    width: 47dvw;
     height: auto; 
     object-fit: cover;
   }
   
   #skills{
-    width: 43dvw;
+    width: 47dvw;
   }
   html, body {
     overflow-x: hidden;
@@ -507,7 +513,10 @@ body {
 
 #skills {
   display: flex;
-  justify-content:center ;
   align-items: center;
   flex-direction: column;
+}
+
+.skill_image{
+  margin-left: 20px
 }
