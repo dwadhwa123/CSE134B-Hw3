@@ -188,7 +188,6 @@
   html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
     overflow-y: scroll;
   }
 
@@ -234,14 +233,6 @@ aside a:hover {
   transform: scale(0.5); 
   animation: fadeInScale 2s ease-out forwards;
 }
-
-.skill_image{
-  width: 50dvw;
-  height: 50dvh;
-  height: auto; 
-  object-fit: cover;
-}
-
 
 @keyframes fadeInScale {
   0% {
@@ -403,7 +394,7 @@ abbr{
 
 pre {
   width: 100%;       
-  overflow-x: auto; 
+  overflow-x: hidden; 
   white-space: pre-wrap; 
   padding: 10px;   
   box-sizing: border-box;
@@ -423,13 +414,6 @@ video {
     display: block;
     margin: 0 auto;
   }
-
-  .skill_image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-fit: cover;
-  }
   
   video{
     width: 100%;
@@ -441,17 +425,50 @@ video {
   .headshot_image{
     width: 100%;
   }
+  .skill_image{
+    width: 85dvw;
+    height: auto; 
+    object-fit: cover;
+  }
+  
+  #skills{
+    width: 85dvw;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 800px) {
   .headshot_image{
     width: 80%;
   }
+
+  .skill_image{
+    width: 80dvw;
+    height: auto; 
+    object-fit: cover;
+  }
+  
+  #skills{
+    width: 80dvw;
+  }
 }
 
 @media (min-width: 801px) and (max-width: 1150px) {
   .headshot_image{
     width: 50%;
+  }
+
+  .skill_image{
+    width: 70dvw;
+    height: auto; 
+    object-fit: cover;
+  }
+  
+  #skills{
+    width: 70dvw;
+  }
+
+  html, body {
+    overflow-x: hidden;
   }
 }
 
@@ -461,6 +478,19 @@ video {
   }
   #faq{
     width: 75%;
+  }
+
+  .skill_image{
+    width: 43dvw;
+    height: auto; 
+    object-fit: cover;
+  }
+  
+  #skills{
+    width: 43dvw;
+  }
+  html, body {
+    overflow-x: hidden;
   }
 }
 
@@ -485,4 +515,17 @@ iframe{
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+#soft_skill_list{
+  font-size: 20;
+  font: Arial;
+}
+
+#skills {
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex-direction: column;
 }
