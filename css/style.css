@@ -295,7 +295,7 @@ p{
 
 
 /* Skills Section*/
-.Technical_skills {
+#skills {
   margin: 20px;
   padding: 20px;
   background-color: lightyellow;
@@ -419,9 +419,6 @@ video {
     object-fit: cover;
   }
   
-  #skills{
-    width: 85dvw;
-  }
 }
 
 @media (min-width: 501px) and (max-width: 800px) {
@@ -435,7 +432,7 @@ video {
     object-fit: cover;
   }
   
-  #skills{
+  .Technical_skills{
     width: 80dvw;
   }
 }
@@ -451,7 +448,7 @@ video {
     object-fit: cover;
   }
   
-  #skills{
+  .Technical_skills{
     width: 70dvw;
   }
 
@@ -474,8 +471,8 @@ video {
     object-fit: cover;
   }
   
-  #skills{
-    width: 47dvw;
+  .Technical_skills{
+    width: 37dvw;
   }
   html, body {
     overflow-x: hidden;
@@ -519,4 +516,8 @@ body {
 
 .skill_image{
   margin-left: 20px
+}
+
+.skills{
+  background-color: lightyellow;
 }
