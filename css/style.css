@@ -478,3 +478,7 @@ dt{
   font-size: 25;
   font-weight: bold;
 }
+
+iframe{
+  overflow: hidden;
+}
